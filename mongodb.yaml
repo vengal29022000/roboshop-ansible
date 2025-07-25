@@ -22,7 +22,7 @@
     ansible.builtin.replace:
       path: /etc/mongod.conf
       regexp: '127.0.0.1'
-      replace: '10.0.0.0'
+      replace: '0.0.0.0'
 
   - name: restart and enable mongodb
     ansible.builtin.service:
