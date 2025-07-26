@@ -22,7 +22,7 @@
   - name: creating a file
     ansible.builtin.file:
       name: /app
-      state: present
+      state: directory
 
   - name: download catalogue application
     ansible.builtin.get_url:
